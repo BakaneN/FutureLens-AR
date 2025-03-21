@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "FutureLens",
+    "scheme": "futurelens",
+    "slug": "futurelens",
+    "version": "0.0.0",
+    "orientation": "portrait",
+    "sdkVersion": "52.0.0",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "description": "",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "buildNumber": "0.0.0",
+      "bundleIdentifier": "za.co.futurelens",
+      "userInterfaceStyle": "automatic",
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "za.co.futurelens",
+      "versionCode": 520000000,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "enableBackgroundRemoteNotifications": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow ${PRODUCT_NAME} to access your gallery to pick a profile picture."
+        }
+      ]
+    ],
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0cba4693-9014-4492-812f-33a7ac11cb04"
+      }
+    },
+    "owner": "nhlanhlab"
+  }
+}
